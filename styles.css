@@ -1,0 +1,123 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #b993d6, #8ca6db);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.container {
+  padding: 20px;
+  border-radius: 50px;
+  width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  opacity: 0.8;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 13px;
+  background-color: #f8f7fb;
+  border: none;
+  border-radius: 50px;
+  color: black;
+  opacity: 0.9;
+  outline: none;
+}
+
+button {
+  width: 25%;
+  padding: 5px;
+  background: linear-gradient(135deg, #a770ef, #cf8bf3);
+  border: none;
+  border-radius: 50px;
+  color: #f8f7fb;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #cf8bf3, #a770ef);
+}
+
+ul {
+  list-style: none;
+    /* default bullet silinir */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+background: #f8f7fb;
+opacity: 0.9;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: disc;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    /* bullet üçün boşluq */
+    color: black;
+}
+li::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  /* sol tərəfdən az boşluq */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border: 3px solid #3700b3;
+  /* qalın kontur və rəng */
+  border-radius: 50%;
+  /* tam dairə */
+  background: transparent;
+  /* içi boş */
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+li button {
+  background-color: #d32f2f;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  
+}
+
+li button:hover {
+  background-color: #b71c1c;
+}
